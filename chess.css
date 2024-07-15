@@ -1,0 +1,177 @@
+body{
+    font-family: "標楷體";
+}
+#load{
+    width: 40vw;
+    height: 85vh;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.checkerboard{
+    width: 85%;
+    height: 85%;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.black{
+    width: 100%;
+    height: 45%;
+}
+.row{
+    width: 100%;
+    height: 25%;
+    /* border-bottom: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.col{
+    border: 1px solid black;
+    width: 12.5%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.river{
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 45px;
+    box-sizing: border-box;
+}
+.red{
+    width: 100%;
+    height: 45%;
+}
+
+
+#black_army{
+    margin: auto;
+    width: 95%;
+    height: 45%;
+    padding-top: 26px;
+
+}
+#red_army{
+    margin: auto;
+    width: 95%;
+    height: 50%;
+
+}
+.first_row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.empty_row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second_row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.third_row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.chess{
+    width: 55px;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    z-index: 20;
+    background: white;
+}
+#red_army .chess{
+    color: red;
+}
+.empty_chess{
+    width: 55px;
+    height: 55px;
+}
+
+
+
+
+.slogan{
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+p{
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl ;
+    font-size: 38px;
+}
+#line{
+    width: 2px;
+    height: 214px;
+    background: #000;
+    position: absolute;
+    top: 10.4%;
+    left: 50%;
+    transform: rotate(48deg);
+    z-index: -2;
+}
+#line::before{
+    content: "";
+    width: 2px;
+    height: 214px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    transform: rotate(-95deg);
+}
+
+#line2{
+    width: 2px;
+    height: 214px;
+    background: #000;
+    position: absolute;
+    bottom: 10.4%;
+    left: 50%;
+    transform: rotate(48deg);
+    z-index: -2;
+}
+#line2::before{
+    content: "";
+    width: 2px;
+    height: 214px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    transform: rotate(-95deg);
+}
